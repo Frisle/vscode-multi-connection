@@ -1,4 +1,5 @@
-FROM store/intersystems/iris-community:2019.3.0.309.0
+ARG IMAGE=intersystemsdc/iris-community
+FROM $IMAGE
 
 COPY Installer.cls /tmp/part1/
 COPY src /tmp/part1/src/
